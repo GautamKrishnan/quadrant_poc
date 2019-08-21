@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from "react-router-dom";
 import logo from '../logo.svg';
-import '../App.css'
+import '../styles/App.css'
 
 
 class MainPage extends Component {
@@ -11,10 +11,12 @@ class MainPage extends Component {
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo"/>
                     <p>
-                        A proof of Concept!
+                       A front-end to interact the the CRUD spring boot implementation
                     </p>
-                    <Link to="/students">Create/Read/Update/Delete students!</Link>
-                    <Link to="/reports">Test this!</Link>
+                    <Link to="/students">Maintain Students</Link><text> - CRUD Spring boot </text>
+                    <br/>
+                    <br/>
+                    <Link to="/reports">A Simple Report!</Link><text> - d3.js </text>
                 </header>
             </div>
         );

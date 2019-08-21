@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Button, ButtonGroup, Container, Table } from 'reactstrap';
 import { Link } from "react-router-dom";
-import '../App.css'
+import '../styles/App.css'
 
 class StudentsPage extends Component {
 
@@ -64,8 +64,8 @@ class StudentsPage extends Component {
         return (
             <div>
                 <Container fluid>
-                    <div className>
-                        <Button color="success" tag={Link} to={{
+                    <div>
+                        <Button tag={Link} to={{
                             pathname: "/student",
                             state: {
                                 id: null
@@ -85,6 +85,14 @@ class StudentsPage extends Component {
                         {studentList}
                         </tbody>
                     </Table>
+                    <br/>
+                    <div>
+                        <Button color="success" tag={Link} to={{
+                            pathname: "/",
+                            state: {
+                                id: null
+                            }}}>Back Home</Button>
+                    </div>
                 </Container>
             </div>
         );
